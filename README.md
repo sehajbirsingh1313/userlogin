@@ -1,56 +1,33 @@
-# CodeIgniter 4 Framework
+							Register Page
+![image](https://user-images.githubusercontent.com/76771922/200381618-1c868ef9-c148-43d2-b94e-ce131faf8052.png)
+![image](https://user-images.githubusercontent.com/76771922/200381740-a3538940-91e1-461e-ad2f-5922336a4353.png)
 
-## What is CodeIgniter?
+							Login Page
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+![image](https://user-images.githubusercontent.com/76771922/200381863-b3a58cbd-ff1d-41f2-aa19-b616004f79ea.png)
 
-This repository holds the distributable version of the framework,
-including the user guide. It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+							User Profile 
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+![image](https://user-images.githubusercontent.com/76771922/200382010-559c9eb7-8d00-478d-b125-c408aff2a83a.png)
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+							Update User
+							
+![image](https://user-images.githubusercontent.com/76771922/200382153-1f1867a5-d965-4b21-8982-5c2df8f43fea.png)
 
+							Change Password
+							
+![image](https://user-images.githubusercontent.com/76771922/200382540-8a91b89b-90d0-4d75-8aba-67532d4fdcdb.png)
 
-## Important Change with index.php
+							Delete Account
+							
+![Screenshot 2022-11-07 233548](https://user-images.githubusercontent.com/76771922/200383380-4575c4be-a901-4aa9-99a0-994ba070a55c.png)
+![image](https://user-images.githubusercontent.com/76771922/200384940-785f7626-32bf-4164-a274-ef6ecf20a2ab.png)
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+							Database
+							
+![image](https://user-images.githubusercontent.com/76771922/200384721-d1c40a41-47a5-4a0d-804f-e7a5df83fa77.png)
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+							Embedded Project
+							
+![Screenshot 2022-11-07 234006](https://user-images.githubusercontent.com/76771922/200383836-84a72c58-554a-445f-848b-477077319eba.png)
+![image](https://user-images.githubusercontent.com/76771922/200384036-261b9657-eac1-4770-b96e-655fe8996396.png)
