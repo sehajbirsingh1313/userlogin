@@ -1,0 +1,99 @@
+CRITICAL - 2022-11-07 02:31:26 --> Invalid file: index2.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index2.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\User.php(171): view('index2')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index2()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 02:33:01 --> Invalid file: index2.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index2.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\User.php(171): view('index2')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index2()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 02:54:25 --> include(css): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 19.
+ 1 APPPATH\Views\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(css): Failed to open stream: No such file or directory', 'APPPATH\\Views\\index.php', 19)
+ 2 APPPATH\Views\index.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\User.php(171): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 02:54:37 --> include(css): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 19.
+ 1 APPPATH\Views\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(css): Failed to open stream: No such file or directory', 'APPPATH\\Views\\index.php', 19)
+ 2 APPPATH\Views\index.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\User.php(171): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 02:54:52 --> include(css): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 19.
+ 1 APPPATH\Views\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(css): Failed to open stream: No such file or directory', 'APPPATH\\Views\\index.php', 19)
+ 2 APPPATH\Views\index.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\User.php(171): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 02:55:09 --> include(styles.css): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 19.
+ 1 APPPATH\Views\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(styles.css): Failed to open stream: No such file or directory', 'APPPATH\\Views\\index.php', 19)
+ 2 APPPATH\Views\index.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\User.php(171): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 02:55:57 --> include(styles.css): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 19.
+ 1 APPPATH\Views\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(styles.css): Failed to open stream: No such file or directory', 'APPPATH\\Views\\index.php', 19)
+ 2 APPPATH\Views\index.php(19): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\User.php(171): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:29:05 --> Undefined property: App\Controllers\User::$load
+in APPPATH\Controllers\User.php on line 171.
+ 1 APPPATH\Controllers\User.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\User::$load', 'APPPATH\\Controllers\\User.php', 171)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:29:22 --> Undefined property: App\Controllers\User::$load
+in APPPATH\Controllers\User.php on line 171.
+ 1 APPPATH\Controllers\User.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\User::$load', 'APPPATH\\Controllers\\User.php', 171)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 08:29:40 --> Undefined property: App\Controllers\User::$load
+in APPPATH\Controllers\User.php on line 171.
+ 1 APPPATH\Controllers\User.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\User::$load', 'APPPATH\\Controllers\\User.php', 171)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
