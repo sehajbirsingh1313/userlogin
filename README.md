@@ -23,9 +23,7 @@
 ![Screenshot 2022-11-07 233548](https://user-images.githubusercontent.com/76771922/200383380-4575c4be-a901-4aa9-99a0-994ba070a55c.png)
 ![image](https://user-images.githubusercontent.com/76771922/200384940-785f7626-32bf-4164-a274-ef6ecf20a2ab.png)
 
-							Database
-							
-![image](https://user-images.githubusercontent.com/76771922/200384721-d1c40a41-47a5-4a0d-804f-e7a5df83fa77.png)
+	
 
 							Embedded Project
 							
