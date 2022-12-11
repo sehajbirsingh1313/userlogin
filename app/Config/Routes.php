@@ -48,6 +48,7 @@ $routes->get('/changepassword', 'User::changepassword', ['filter'=>'isLogged']);
 $routes->post('/updatepassword', 'User::updatepassword', ['filter'=>'isLogged']);
 $routes->get('/deleteAccount', 'User::deleteAccount', ['filter'=>'isLogged']);
 $routes->get('/treasure_crate', 'User::treasure_crate', ['filter'=>'isLogged']);
+$routes->post('/treasure_crate', 'User::treasure_crate', ['filter'=>'isLogged']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -28,6 +28,17 @@ body{
 
 
 }
+.heading2{
+    width: 50%;
+    max-width: 500px;
+    font-size: 90px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-family:fantasy; 
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px rgba(255, 196, 0, 0.804); 
+    margin: 0.5px auto;
+    text-align: center;}
 
 #custom-button {
     padding: 10px;
@@ -73,6 +84,11 @@ body{
 
 }
 #box{
+    margin: 15px;
+    padding: 3px;
+    background-color: rgb(234, 255, 0);
+}
+#box2{
     margin: 15px;
     padding: 3px;
     background-color: rgb(234, 255, 0);
@@ -148,14 +164,25 @@ body{
       
 
       <div>
-        <form action = "tc_upload.php" method = "POST" enctype ="multipart/form-data">
+        <!-- <form action = "tc_upload.php" method = "post" enctype ="multipart/form-data">
           <label id = "title">Title</label><input type = "text" name = "title" id = "box" >
           <input type = "file" id = "real-file" hidden = "hidden" name = "file">
           <button type = "button" id = "custom-button">Choose a file</button>
           <span id = "custom-text">No file choosen, yet</span>
           <button type = "submit" name = "submit" id = "upload">Upload</button>
-        </form>
+        </form> -->
 
+<form method="post" enctype="multipart/form-data">
+    <label id="title">Title</label><input type="text" name = "title" id = "box">
+    <label id="title">Enter your Treasure</label><input type="text" name = "data" id = "box"maxlength = 2000>
+    <!-- <label>File Upload</label> -->
+    <!-- <input type="file" id = "real-file" hidden = "hidden" name="file"> -->
+    <!-- <input type="File" name="file"> -->
+    <!-- <span id = "custom-text">No file choosen, yet</span> -->
+    <button type = "submit" name = "submit" id = "upload">Submit</button>
+ 
+
+</form>
       
     <script type="text/javascript">
         const realFileBtn = document.getElementById("real-file");
@@ -175,4 +202,137 @@ body{
         });
     </script>
       </div>
+      <br><br><br><br><br><br><br><br>
 </body>
+<?php
+
+use CodeIgniter\Exceptions\AlertError;
+
+$localhost = "localhost"; #localhost
+$dbusername = "root"; #username of phpmyadmin
+$dbpassword = "";  #password of phpmyadmin
+$dbname = "upload";  #database name
+ 
+#connection string
+$conn = mysqli_connect($localhost,$dbusername,$dbpassword,$dbname);
+ 
+if (isset($_POST["submit"]))
+ {
+     #retrieve file title
+        $title = $_POST["title"];
+        $data = $_POST["data"];
+     
+    #file name with a random number so that similar dont get replaced
+     
+ 
+    #sql query to insert into database
+    $sql = "INSERT into fileup(title,image) VALUES('$title','$data')";
+ 
+    if(mysqli_query($conn,$sql)){
+ 
+    echo "File Sucessfully uploaded";
+    }
+    else{
+        echo "Error";
+    }
+}
+ 
+ 
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body >
+
+    <!-- <div class="container" >
+        <div class="row"style="text-align: center;">
+            <div class="col-md-12">
+                <div class="card mt-4">
+                    <div class="card-header"> -->
+                        <h4 class = "heading2" style="text-align: center;">Search your Treasure </h4>
+                    <!-- </div> -->
+                    <div class="card-body" style= "margin-left: 350px;">
+                        <div class="row"style="text-align: center;">
+                            <div class="col-md-7"style="text-align: center;">
+
+                                <form action="" method="GET">
+                                    <div class="input-group mb-3" style="text-align: center;">
+                                        <input type="text" name="search"  class="form-control" placeholder="Search your Treasure" style="text-align: center;">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12"style="text-align: center;">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Search your Treasure</th>
+                                    <th>Your Treasure</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <?php 
+                                    $con = mysqli_connect("localhost","root","","upload");
+
+                                    if(isset($_GET['search']))
+                                    {
+                                        $filtervalues = $_GET['search'];
+                                        $query = "SELECT * FROM fileup WHERE CONCAT(id,title, image) LIKE '%$filtervalues%' ";
+                                        $query_run = mysqli_query($con, $query);
+                                      
+                                        if(mysqli_num_rows($query_run) > 0)
+                                        {
+                                            foreach($query_run as $items)
+                                            {
+                                                ?>
+                                                
+                                                
+                                                <tr>
+                                                    <td><?= $items['id']; ?></td>
+                                                    <td><?= $items['title'];?></td>
+                                                    <td><?= $items['image'];?></td>
+                                                    <!-- <td><img src="data:images/awt6;base64,'.base64_encode($row['name'] ).'" height="200" width="200" class="img-thumnail" /></td> -->
+                                                    <!-- <td><img src="<?php echo $items['image'];?>"</td> -->
+                                                </tr>
+                                                <?php
+                                            }
+                                        }
+                                        else
+                                        {
+                                            ?>
+                                                <tr>
+                                                    <td colspan="4">No Record Found</td>
+                                                </tr>
+                                            <?php
+                                        }
+                                    }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
